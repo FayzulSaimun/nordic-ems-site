@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vite/
+*.local
+.env
+
+# Local visual QA captures
+implementation-*.png
+design-qa-*.png
+updated-curriculum-section.png
+*-comparison.png
+.openai/
+.memsearch/
+desing-qa.md
