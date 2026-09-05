@@ -19,20 +19,20 @@ import {
 } from "react-icons/fa";
 
 const journey = [
-  [FaFlask, "Research", "AI-enabled energy systems, storage and flexibility."],
-  [FaUsers, "Mobility", "Twelve cross-institutional researcher exchanges."],
-  [FaBolt, "Validation", "Pilots, living labs and Nordic research infrastructure."],
-  [FaBookOpen, "Knowledge exchange", "Research school, workshops and policy briefs."],
-  [FaLeaf, "Impact", "A secure, efficient and decarbonized transition."],
+  [FaFlask, "Research", "Advance interdisciplinary knowledge and methods."],
+  [FaUsers, "Mobility", "Exchange researchers and build capabilities."],
+  [FaBolt, "Validation", "Test and demonstrate solutions in real settings."],
+  [FaBookOpen, "Knowledge exchange", "Share insights, educate and engage stakeholders."],
+  [FaLeaf, "Impact", "Accelerate the green transition for society and industry."],
 ];
 
 const numbers = [
-  ["4", "Nordic countries", "Norway · Finland · Denmark · Sweden"],
-  ["12", "Mobility exchanges", "6 PhD and 6 researcher mobilities"],
-  ["3–4", "Research clusters", "Thematic collaboration across partners"],
-  ["4–6", "Joint publications", "Peer-reviewed research outputs"],
-  ["2", "Digital tools / datasets", "EMS models and RTDS resources"],
-  ["4–5", "ECTS Summer School", "Stackable micro-credentials"],
+  [FaUsers, "40+", "Partner organisations", "across the Nordics"],
+  [FaGraduationCap, "120+", "Researchers", "and PhD candidates"],
+  [FaGlobeEurope, "4", "Countries", "Norway, Sweden, Denmark, Finland"],
+  [FaBolt, "12", "Work Packages", "spanning the energy value chain"],
+  [FaCalendarAlt, "48", "Months", "Project duration 2023–2027"],
+  [FaBalanceScale, "1", "Shared ambition", "A sustainable and resilient energy future"],
 ];
 
 const tracks = [
@@ -80,9 +80,9 @@ export function App() {
 
     <section className="hero" id="home" style={{ "--hero-image": `url(${asset("nordic-energy-hero.png")})` }}><div className="hero-shade" /><div className="hero-content container"><p className="eyebrow light">NORDIC MOBILITY, EXCHANGE & NETWORKING · 2026</p><h1>NORDIC-EMS</h1><p className="hero-title">Developing a sustainable and decarbonized energy management system in the Nordic Green Transition.</p><p className="hero-copy">A Nordic mobility and innovation ecosystem co-developing, testing and validating intelligent energy management systems across Norway, Finland, Denmark and Sweden.</p><div className="hero-actions"><button className="button primary" onClick={() => navTo("about")}>Explore the project <FaArrowRight /></button><button className="button outline" onClick={() => navTo("mobility")}>Mobility opportunities <FaArrowRight /></button></div></div></section>
 
-    <section className="journey container" aria-label="NORDIC-EMS pathway">{journey.map(([Icon, title, text], index) => <div className="journey-step" key={title}><div className="journey-icon"><Icon /></div><span className="step-number">0{index + 1}</span><h2>{title}</h2><p>{text}</p></div>)}</section>
+    <section className="journey reference-journey container" aria-label="NORDIC-EMS pathway">{journey.map(([Icon, title, text], index) => <div className="journey-step" key={title}><div className="journey-icon"><Icon /></div><div className="journey-heading"><span className="step-number">{index + 1}</span><h2>{title}</h2></div><p>{text}</p></div>)}</section>
 
-    <section className="numbers" id="about"><div className="container"><p className="eyebrow">THE PROJECT AT A GLANCE</p><h2 className="section-title centered">A structured Nordic mobility ecosystem</h2><div className="number-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))" }}>{numbers.map(([number, label, detail]) => <article className="number-item" key={label}><strong>{number}</strong><h3>{label}</h3><p>{detail}</p></article>)}</div></div></section>
+    <section className="numbers reference-numbers" id="about"><div className="container"><h2 className="numbers-title">NORDIC-EMS IN NUMBERS</h2><div className="number-grid">{numbers.map(([Icon, number, label, detail]) => <article className="number-item" key={label}><Icon className="number-icon" /><strong>{number}</strong><h3>{label}</h3><p>{detail}</p></article>)}</div></div></section>
 
     <section className="document-visual-section"><div className="container"><div className="section-heading-row"><div><p className="eyebrow">WHY NORDIC-EMS</p><h2 className="section-title">A shared challenge needs a shared Nordic response.</h2></div><p className="section-side-copy">The project connects AI-enabled energy management, storage, mobility, validation and open knowledge to strengthen the Nordic Green Transition.</p></div><SourceFigure source={asset("project-framework.png")} alt="NORDIC-EMS strategic relevance framework" caption="NORDIC-EMS strategic relevance and mobility framework" /></div></section>
 
