@@ -22,7 +22,7 @@ The production website is emitted to `dist/client`. The extra `dist/server` and 
 
 ## GitHub Pages deployment
 
-The workflow in `.github/workflows/deploy-pages.yml` deploys every push to `main` and can also be started from the Actions tab. It automatically sets the Vite base path to the repository name, keeping assets correct at `https://OWNER.github.io/REPOSITORY/`.
+The workflow in `.github/workflows/deploy-pages.yml` deploys every push to `main` and can also be started from the Actions tab. It uses the static-only `build:pages` command, so the local Sites handoff files are not required in GitHub Actions. It automatically sets the Vite base path to the repository name, keeping assets correct at `https://OWNER.github.io/REPOSITORY/`.
 
 After pushing the repository to GitHub, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source. The first successful workflow run provides the live URL in its deployment summary.
 
