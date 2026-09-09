@@ -1,0 +1,581 @@
+.brand {
+  gap: 10px;
+}
+
+.brand-symbol {
+  width: 42px;
+  height: 42px;
+  flex: none;
+  overflow: visible;
+  fill: #4dbd68;
+}
+
+.brand-orbit {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.brand-orbit-a,
+.brand-orbit-d {
+  stroke: #0aa4b0;
+}
+
+.brand-orbit-b,
+.brand-orbit-c {
+  stroke: #4dbd68;
+}
+
+.brand-wave {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.brand-copy {
+  display: block;
+  width: 174px;
+}
+
+.brand-copy strong {
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: -0.8px;
+}
+
+.brand-copy small {
+  max-width: 174px;
+  color: #8bdadd;
+  font-size: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+}
+
+.footer-brand .brand-symbol {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-brand .brand-copy {
+  width: 230px;
+}
+
+.footer-brand .brand-copy strong {
+  font-size: 24px;
+}
+
+.footer-brand .brand-copy small {
+  max-width: 230px;
+  font-size: 9px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero-funding {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+  max-width: 760px;
+  margin-top: 28px;
+  color: #d7e7ef;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.hero-funding strong {
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+}
+
+.kpi-line {
+  max-width: 960px;
+  margin: 23px auto 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.pillars-section {
+  padding: 88px 0;
+  background: #fff;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+}
+
+.pillars-grid article {
+  min-height: 210px;
+  padding: 27px 22px;
+  border-right: 1px solid var(--line);
+}
+
+.pillars-grid article:first-child {
+  padding-left: 0;
+}
+
+.pillars-grid article:last-child {
+  border-right: 0;
+}
+
+.pillars-grid svg {
+  color: var(--teal);
+  font-size: 29px;
+}
+
+.pillars-grid h3 {
+  margin: 18px 0 8px;
+  font-size: 17px;
+  letter-spacing: -0.7px;
+}
+
+.pillars-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.consortium {
+  padding: 88px 0;
+}
+
+.consortium-lead {
+  max-width: 790px;
+}
+
+.consortium-lead > p:not(.eyebrow) {
+  max-width: 730px;
+  margin: 25px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.partner-group {
+  margin-top: 52px;
+}
+
+.partner-group-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.partner-group-heading .eyebrow {
+  margin: 0;
+}
+
+.partner-group-heading > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.partner-logo-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.partner-logo-grid.universities {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.partner-logo-grid.observers {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.partner-logo {
+  min-height: 208px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.partner-mark {
+  display: grid;
+  height: 104px;
+  place-items: center;
+  padding: 12px 8px 18px;
+  border-bottom: 1px solid #eaf0f4;
+}
+
+.partner-mark img {
+  display: block;
+  max-width: 100%;
+  max-height: 76px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.partner-mark span {
+  display: block;
+  color: #123a6d;
+  font: 800 29px/1 Manrope, sans-serif;
+  letter-spacing: -1.7px;
+}
+
+.partner-logo--hiof .partner-mark span {
+  color: #0e6b72;
+  letter-spacing: -2.5px;
+}
+
+.partner-logo--hiof .partner-mark img {
+  max-height: 48px;
+}
+
+.partner-logo--uva .partner-mark span {
+  color: #a06d00;
+  letter-spacing: -2.7px;
+}
+
+.partner-logo--uva .partner-mark img {
+  max-height: 82px;
+}
+
+.partner-logo--ltu .partner-mark span {
+  color: #bb1d3a;
+}
+
+.partner-logo--ltu .partner-mark img {
+  max-height: 52px;
+}
+
+.partner-logo--afry .partner-mark span {
+  color: #2a1c4c;
+  letter-spacing: 1.4px;
+}
+
+.partner-logo--afry .partner-mark img {
+  max-height: 64px;
+}
+
+.partner-logo--energy-manager .partner-mark span {
+  color: #159c9f;
+  font-size: 23px;
+  letter-spacing: -1.4px;
+}
+
+.partner-logo--energy-manager .partner-mark {
+  height: 104px;
+  margin: -2px -2px 0;
+  padding: 18px;
+  background: #06465d;
+  border-bottom-color: #06465d;
+}
+
+.partner-logo--energy-manager .partner-mark img {
+  width: 100%;
+  max-height: 42px;
+}
+
+.partner-logo--skebit .partner-mark span {
+  color: #225f9d;
+  font-size: 26px;
+  letter-spacing: 1.2px;
+}
+
+.partner-logo--megawatt .partner-mark span {
+  color: #f16635;
+  font-size: 25px;
+  letter-spacing: -1.8px;
+}
+
+.partner-logo--megawatt .partner-mark img {
+  max-height: 58px;
+}
+
+.partner-logo--cyber-security-finland .partner-mark span {
+  color: #18375c;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.partner-logo--cyber-security-finland .partner-mark img {
+  max-height: 67px;
+}
+
+.partner-logo h3 {
+  margin: 16px 0 4px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.partner-logo p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.observers-group {
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.engagement-flow {
+  margin: 24px 0 0;
+  color: #264766;
+  font: 700 13px/1.6 Manrope, sans-serif;
+  text-align: center;
+}
+
+.engagement-flow span {
+  padding: 0 7px;
+  color: var(--teal);
+}
+
+.funder-strip {
+  display: grid;
+  grid-template-columns: 235px 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-top: 54px;
+  padding: 28px 32px;
+  border: 1px solid #b6d6c8;
+  background: #edf7f1;
+}
+
+.funder-strip img {
+  display: block;
+  width: min(232px, 100%);
+  height: auto;
+}
+
+.funder-strip .eyebrow {
+  margin-bottom: 5px;
+}
+
+.funder-strip h3 {
+  margin: 0 0 6px;
+  color: #14523e;
+  font-size: 23px;
+  letter-spacing: -1px;
+}
+
+.funder-strip p:last-child {
+  margin: 0;
+  color: #45695e;
+  font-size: 13px;
+}
+
+.news-section {
+  padding: 88px 0;
+  background: #031a39;
+  color: #fff;
+}
+
+.news-section .section-title {
+  color: #fff;
+}
+
+.news-section .text-button {
+  color: #63d7da;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 38px;
+}
+
+.news-grid article {
+  min-height: 254px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #07284d;
+  border-top: 3px solid var(--teal);
+}
+
+.news-grid article > p {
+  margin: 0;
+  color: #6fced1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.news-grid h3 {
+  margin: 13px 0 14px;
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+
+.news-grid article > span {
+  width: 38px;
+  height: 2px;
+  margin-bottom: 14px;
+  background: #54c7c9;
+}
+
+.news-grid article > div {
+  color: #c5d7e7;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.news-grid button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: start;
+  margin-top: auto;
+  padding: 14px 0 0;
+  border: 0;
+  background: transparent;
+  color: #64d9dc;
+  font-weight: 700;
+}
+
+.footer-funder-logo {
+  display: block;
+  width: min(232px, 100%);
+  margin: 4px 0 13px;
+}
+
+.contact-context {
+  display: grid;
+  gap: 4px;
+  padding: 15px 16px;
+  border: 1px solid var(--line);
+}
+
+.contact-context span {
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.contact-context p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 1050px) {
+  .partner-logo-grid.observers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .brand-symbol {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-copy {
+    width: 154px;
+  }
+
+  .brand-copy strong {
+    font-size: 17px;
+  }
+
+  .brand-copy small {
+    max-width: 154px;
+    font-size: 7px;
+  }
+
+  .pillars-section,
+  .news-section {
+    padding: 64px 0;
+  }
+
+  .pillars-grid,
+  .partner-logo-grid.universities,
+  .partner-logo-grid.observers,
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pillars-grid article,
+  .pillars-grid article:first-child {
+    min-height: 190px;
+    padding: 22px 14px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .pillars-grid article:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .partner-group-heading,
+  .funder-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .partner-logo {
+    min-height: 188px;
+    padding: 15px;
+  }
+
+  .partner-mark {
+    height: 90px;
+  }
+
+  .partner-mark span {
+    font-size: 23px;
+  }
+
+  .partner-logo--cyber-security-finland .partner-mark span,
+  .partner-logo--energy-manager .partner-mark span {
+    font-size: 15px;
+  }
+
+  .engagement-flow {
+    text-align: left;
+  }
+
+  .funder-strip {
+    margin-top: 38px;
+    padding: 24px;
+  }
+
+  .news-grid {
+    gap: 10px;
+  }
+
+  .news-grid article {
+    min-height: 270px;
+    padding: 18px;
+  }
+
+  .news-grid h3 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 440px) {
+  .partner-logo-grid.universities,
+  .partner-logo-grid.observers,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
