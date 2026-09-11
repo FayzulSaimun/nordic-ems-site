@@ -355,21 +355,59 @@
 
 .consortium-map {
   margin: 34px 0 52px;
-  padding: 16px;
-  border: 1px solid #c7dbe4;
-  background: #062957;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
-.consortium-map img {
+.map-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  border: 1px solid #b8d3df;
+  background: #061d40;
+  box-shadow: 0 18px 40px rgba(3, 27, 60, .14);
+}
+
+.map-frame img {
   display: block;
   width: 100%;
-  max-height: 330px;
+  height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
+.map-label {
+  position: absolute;
+  display: grid;
+  gap: 2px;
+  min-width: 82px;
+  padding: 8px 10px;
+  border-left: 3px solid #ffd166;
+  background: rgba(3, 27, 60, .92);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+}
+
+.map-label strong {
+  font: 700 12px/1.1 Manrope, sans-serif;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.map-label small {
+  color: #8bdadd;
+  font-size: 11px;
+}
+
+.map-label--norway { left: 28%; top: 27%; }
+.map-label--finland { left: 59%; top: 24%; }
+.map-label--sweden { left: 39%; top: 61%; }
+.map-label--denmark { left: 17%; bottom: 5%; }
+
 .consortium-map figcaption {
-  padding-top: 12px;
-  color: #cfe1ec;
+  padding: 12px 2px 0;
+  color: var(--muted);
   font-size: 12px;
   line-height: 1.4;
 }
