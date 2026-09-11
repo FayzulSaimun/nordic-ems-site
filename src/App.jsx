@@ -41,7 +41,7 @@ const pillars = [
 ];
 
 const tracks = [
-  [FaGraduationCap, "PhD mobility", "Research stays of up to three months", "Joint research, co-supervision, complementary expertise and shared publications."],
+  [FaGraduationCap, "PhD mobility", "Research stays of up to three months", "Joint research, co-supervision, complementary expertise and joint research outputs."],
   [FaFlask, "Researcher / postdoctoral mobility", "Focused short-term exchanges", "Method transfer, advanced modelling, validation and technical integration."],
   [FaUsers, "Cross-sector knowledge exchange", "Industry and public stakeholders", "Real-world validation, technology transfer and policy relevance."],
 ];
@@ -51,7 +51,7 @@ const workPackages = [
   ["WP2", "Intelligent Energy Management Systems", "Lead: University of Vaasa · M3–M36", "AI-driven EMS modelling, forecasting, optimisation and flexible energy systems."],
   ["WP3", "Intelligent integration of energy storage", "Lead: DTU · M3–M36", "Storage, P2X, predictive control, interoperability and experimental validation."],
   ["WP4", "Nordic Research School & capacity building", "Lead: HIOF · M18–M40", "Mobility, co-supervision, joint training and Nordic Summer School development."],
-  ["WP5", "Communication, knowledge exchange & impact", "Lead: LTU · M1–M40", "Scientific communication, industry engagement, outreach and long-term knowledge sharing."],
+  ["WP5", "Communication, knowledge exchange & impact", "Lead: LTU · M1–M40", "Connects project research and mobility activities with industry, communities, public stakeholders and society. WP5 supports co-creation, dissemination, stakeholder engagement, policy and industry dialogue, public outreach, and the uptake of project results beyond academia."],
 ];
 
 const modules = [
@@ -63,7 +63,7 @@ const modules = [
 ];
 
 const universities = [
-  ["HIOF", "Østfold University of Applied Sciences", "Norway", "hiof", "hiof.png", "AI, digitalisation & applied energy systems"],
+  ["HIOF", "Østfold University of Applied Sciences", "Norway", "hiof", "hiof.png", "Intelligent control, energy storage, digitalisation & AI-enabled energy systems."],
   ["UVA", "University of Vaasa", "Finland", "uva", "university-vaasa.png", "EMS, smart grids & flexibility"],
   ["DTU", "Technical University of Denmark", "Denmark", "dtu", "dtu.png", "Storage, control & sector coupling"],
   ["LTU", "Luleå University of Technology", "Sweden", "ltu", "ltu.png", "Industrial energy systems & validation"],
@@ -145,7 +145,7 @@ export function App() {
 
     <section className="opportunities-section" id="opportunities"><div className="container opportunities-grid"><div><p className="eyebrow teal">MOBILITY &amp; OPPORTUNITIES</p><h2 className="section-title">Join the Nordic exchange.</h2><p className="opportunities-lead">No open calls at present. Planned opportunities will include PhD mobility, researcher and postdoctoral mobility, Nordic Summer School, workshops and training.</p><p className="opportunities-contact">To register an interest, contact the project coordinator directly. There is no online application form.</p><a className="button primary" href="mailto:lucian.mihet@hiof.no?subject=NORDIC-EMS%20opportunity%20interest">Email the project coordinator <FaArrowRight /></a></div><div className="selection-flow"><p className="eyebrow">SELECTION FLOW</p>{["Call", "Application", "Evaluation", "Host matching", "Individual mobility plan"].map((step, index) => <div key={step}><span>0{index + 1}</span><strong>{step}</strong></div>)}</div></div></section>
 
-    <section className="news-section" id="news"><div className="container"><div className="section-heading-row"><div><p className="eyebrow teal">NEWS &amp; EVENTS</p><h2 className="section-title">Follow the project as it takes shape.</h2></div><a className="text-button" href={sitePage("opportunities.html")}>Ask about opportunities <FaArrowRight /></a></div><div className="news-grid">{[["September 2026", "NORDIC-EMS project launch", "The consortium begins aligning research activities, mobility plans and first-year priorities.", "news/project-launch.html"], ["October 2026", "NORDIC-EMS kick-off meeting", "Partners align research, mobility, governance and first-year priorities.", "news/kick-off-meeting.html"], ["Q4 2026", "First mobility activities", "The consortium begins planning the initial PhD and researcher exchanges.", "news/first-mobility-activities.html"], ["2027", "Nordic Summer School planning", "The programme develops a shared learning experience across the Nordic research ecosystem.", "news/nordic-summer-school.html"]].map(([date, title, text, page]) => <article key={title}><p>{date}</p><h3>{title}</h3><span /><div>{text}</div><a href={sitePage(page)}>Read more <FaArrowRight /></a></article>)}</div></div></section>
+    <section className="news-section" id="news"><div className="container"><div className="section-heading-row"><div><p className="eyebrow teal">NEWS &amp; EVENTS</p><h2 className="section-title">Follow the project as it takes shape.</h2></div><a className="text-button" href={sitePage("opportunities.html")}>Ask about opportunities <FaArrowRight /></a></div><div className="news-grid">{[["September 2026", "NORDIC-EMS project launch", "The consortium begins aligning research activities, mobility plans and first-year priorities.", "news/project-launch.html"], ["25 September 2026", "NORDIC-EMS kick-off meeting", "Partners align research, mobility, governance and first-year priorities.", "news/kick-off-meeting.html"], ["Q4 2026", "First mobility activities", "The consortium begins planning the initial PhD and researcher exchanges.", "news/first-mobility-activities.html"], ["Summer 2028", "Nordic Summer School planning", "The programme develops a shared learning experience across the Nordic research ecosystem.", "news/nordic-summer-school.html"]].map(([date, title, text, page]) => <article key={title}><p>{date}</p><h3>{title}</h3><span /><div>{text}</div><a href={sitePage(page)}>Read more <FaArrowRight /></a></article>)}</div></div></section>
 
     <footer id="contact"><div className="container footer-grid"><div><Brand footer onClick={() => navTo("home")} /><p>Developing a sustainable and decarbonized energy management system in the Nordic Green Transition.</p></div><div><p className="eyebrow teal">PROJECT COORDINATOR</p><p>Prof. Nicolae Lucian Mihet<br />Østfold University of Applied Sciences<br />Faculty of Information Technology, Engineering and Economics</p><a href="mailto:lucian.mihet@hiof.no">lucian.mihet@hiof.no</a></div><div><p className="eyebrow teal">FUNDED BY</p><img className="footer-funder-logo" src={asset("brand/nordic-energy-research.png")} alt="Nordic Energy Research" /><p>Nordic Energy Research Mobility Programme<br />Project No. 264880<br />1 September 2026 – 31 December 2029</p></div></div><div className="container footer-bottom">© 2026 NORDIC-EMS · <a href={sitePage("privacy.html")}>Privacy</a> · <a href={sitePage("accessibility.html")}>Accessibility</a></div></footer>
 
