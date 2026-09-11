@@ -455,6 +455,114 @@
   margin: 4px 0 13px;
 }
 
+.wp-architecture {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin: 28px 0 34px;
+  padding: 22px 24px;
+  border: 1px solid #c8dce4;
+  background: #f4fafb;
+  color: var(--navy);
+  text-align: center;
+}
+
+.number-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.wp-architecture > span {
+  color: var(--teal);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.wp-architecture > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.wp-architecture b {
+  color: var(--teal);
+  font-size: 22px;
+}
+
+.wp-architecture strong {
+  font: 700 14px/1.35 Manrope, sans-serif;
+}
+
+.result-status {
+  margin: 14px 0 0 !important;
+  color: #238594 !important;
+  font-size: 10px !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.results-grid article h3 + p {
+  margin-top: 0;
+}
+
+.opportunities-section {
+  padding: 88px 0;
+  background: #eef7f5;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.opportunities-section .section-title {
+  max-width: 520px;
+  margin-bottom: 22px;
+}
+
+.opportunities-lead,
+.opportunities-contact {
+  max-width: 580px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.opportunities-contact {
+  margin-bottom: 28px;
+}
+
+.selection-flow {
+  padding: 26px 30px;
+  border-left: 3px solid var(--teal);
+  background: #fff;
+}
+
+.selection-flow > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.selection-flow > div:last-child {
+  border-bottom: 0;
+}
+
+.selection-flow span {
+  color: var(--teal);
+  font: 700 12px Manrope, sans-serif;
+}
+
+.selection-flow strong {
+  color: var(--navy);
+  font: 700 16px Manrope, sans-serif;
+}
+
 .contact-context {
   display: grid;
   gap: 4px;
@@ -477,6 +585,10 @@
 }
 
 @media (max-width: 1050px) {
+  .number-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .partner-logo-grid.observers {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -507,10 +619,16 @@
   }
 
   .pillars-grid,
+  .number-grid,
   .partner-logo-grid.universities,
   .partner-logo-grid.observers,
   .news-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .pillars-grid article,
@@ -565,6 +683,10 @@
   .news-grid article {
     min-height: 270px;
     padding: 18px;
+  }
+
+  .wp-architecture {
+    padding: 20px 14px;
   }
 
   .news-grid h3 {
