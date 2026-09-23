@@ -80,6 +80,32 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
+.metrics-group-title {
+  margin: 0 0 10px;
+  color: #238594;
+  font: 700 11px/1.3 Manrope, sans-serif;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reference-numbers .consortium-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 640px;
+  margin: 0 auto 22px;
+}
+
+.reference-numbers .project-targets {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.targets-title {
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
 .reference-numbers .number-item {
   min-height: 137px;
   padding: 0 14px;
@@ -120,6 +146,11 @@
 
   .reference-numbers .number-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reference-numbers .consortium-facts,
+  .reference-numbers .project-targets {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .reference-numbers .number-item:nth-child(2n) {
